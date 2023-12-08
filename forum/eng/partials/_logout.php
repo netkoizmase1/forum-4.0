@@ -3,5 +3,5 @@ session_start();
 echo "Logging you out. Please wait...";
 
 session_destroy();
-header("Location: /forum/indexeng.php")
+header("Location: /forum/eng/indexeng.php")
 ?>
