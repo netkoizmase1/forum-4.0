@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $row['user_name']; // Set the username in the session
 
             echo "logged in" . $email;
-            header("Location: /forum/indexeng.php");
+            header("Location: /forum/eng/indexeng.php");
             exit();
         } else {
             $showError = "Invalid Password";
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Redirect back to login page with error
-    header("Location: /forum/indexeng.php?loginError=" . urlencode($showError));
+    header("Location: /forum/eng/indexeng.php?loginError=" . urlencode($showError));
     exit();
 }
 ?>
