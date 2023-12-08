@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             if($rezultat){
                 $showAlert = true;
-                header("Location: /forum/index.php?signupsuccess=true");
+                header("Location: /forum/hr/indexhr.php?signupsuccess=true");
                 exit();
             }
 
@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
         }
     }
-    header("Location: /forum/index.php?signupsuccess=false&error=$showError");
+    header("Location: /forum/hr/indexhr.php?signupsuccess=false&error=$showError");
 
 }
 ?>
