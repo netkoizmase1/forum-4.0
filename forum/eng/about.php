@@ -35,7 +35,7 @@
     <?php include 'partials/_header.php';?>
 
     <div class="container">
-        <img src="img/onama.jpg" alt="Your Image">
+        <img src="/forum/img/onama.jpg" alt="Your Image">
         <p class="text">Džim Baja</p>
     </div>
 
