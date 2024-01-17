@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-// SuÄŤelje za osnovni objekt - stavku narudĹľbe
+// Sučelje za osnovni objekt - stavku narudžbe
 public interface IStavkaNarudzbe
 {
     string Opis();
@@ -22,7 +22,7 @@ public class OsnovnaStavka : IStavkaNarudzbe
     }
 }
 
-// Dekorator koji proĹˇiruje osnovnu stavku - npr. dodatak sira
+// Dekorator koji proširuje osnovnu stavku - npr. dodatak sira
 public class DodatakSira : IStavkaNarudzbe
 {
     private readonly IStavkaNarudzbe osnovnaStavka;
@@ -43,7 +43,7 @@ public class DodatakSira : IStavkaNarudzbe
     }
 }
 
-// Dekorator koji proĹˇiruje osnovnu stavku - npr. dodatak umaka
+// Dekorator koji proširuje osnovnu stavku - npr. dodatak umaka
 public class DodatakUmaka : IStavkaNarudzbe
 {
     private readonly IStavkaNarudzbe osnovnaStavka;
@@ -89,12 +89,12 @@ class Program
                 narudzba = new DodatakUmaka(narudzba);
                 break;
             default:
-                Console.WriteLine("NevaĹľeÄ‡i odabir. Dodatak nije dodan.");
+                Console.WriteLine("Nevažeći odabir. Dodatak nije dodan.");
                 break;
         }
 
-        // Ispis opisa i ukupne cijene narudĹľbe
-        Console.WriteLine($"Opis narudĹľbe: {narudzba.Opis()}");
-        Console.WriteLine($"Ukupna cijena narudĹľbe: {narudzba.Cijena()} KM");
+        // Ispis opisa i ukupne cijene narudžbe
+        Console.WriteLine($"Opis narudžbe: {narudzba.Opis()}");
+        Console.WriteLine($"Ukupna cijena narudžbe: {narudzba.Cijena()} KM");
     }
 }
